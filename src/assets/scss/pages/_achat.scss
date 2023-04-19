@@ -1,0 +1,161 @@
+.form-achat {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+
+    .left-form-achat {
+        padding: 1rem;
+        font-size: 20px !important;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        font-size: 16px;
+        flex: 1;
+
+        .scroll-prod{
+            font-size: 15px;
+            height: calc(100% - 20%);
+            overflow-y: scroll;
+
+            .prod-items {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                border-bottom: 1px solid #e9dbdb;
+                padding: 0.5rem;
+
+                .btn-panier-btn {
+                    float: right;
+                    outline: none;
+                    border: none;
+                    border-radius: 2px;
+                    padding: 8px;
+                    color: white;
+                    background: #12517e;
+                }
+            }
+
+        }
+
+    }
+    .right-form-achat {
+        max-height: 90vh;
+        overflow-y: scroll;
+        background: #f9f5f5;
+
+        .table-left-achat {
+            width: 100%;
+            padding: 1rem;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+
+            tr {
+                font-size: 16px;   
+                text-align: center;
+                
+                th {                    
+                    border-bottom: 1px solid rgba(96, 93, 93, 0.371);
+                }
+            }
+
+            .item-entana {  
+                
+                height: 30px;
+                box-shadow: 7px 6px 38px 0px rgba(0,0,0,0.11);
+                border-radius: 5px;                               
+                td {
+                    font-size: 14px;
+                    text-align: center;                    
+                    background: white;
+                }
+                .bnt-td {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .moov-entana {
+            outline: none;
+            padding: 7px;
+            background: #34788f;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin: 0.25rem;
+        }
+
+        .retire-entana {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: #b65558;
+            background: transparent;
+        }
+    }
+}
+
+.etapy{
+    width: 100%;
+    height: 100%;
+    // background-color: aqua;
+
+    .client_list{
+        width: 50%;
+        height: 100%;
+        // background-color: brown;
+        float: left;
+        font-size: 75%;
+        padding: 10px;
+
+        .thelist{
+            width: 100%;
+            height: calc(100% - 100px);
+            background-color: rgb(219, 219, 219);
+            padding: 10px;
+            
+            overflow: hidden;
+
+            .client_element{
+                height: 40px;
+                width: 100%;
+                background-color: white;
+                border-radius: 5px;
+                padding: 10px;
+                box-shadow: 2px 3px 32px -7px rgba(0,0,0,0.75);
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .client_form{
+        width: 50%;
+        height: 100%;
+        // background-color: #12517e;
+        float: left;
+        padding: 10px;
+
+
+    }
+}
+
+.etapy{
+    position: relative;
+    .achat_fin{
+        width: 400px;
+        height: 100%;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+}

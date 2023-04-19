@@ -1,0 +1,48 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+/* font scaling */
+$font-scale: (
+        "h1" : "78px",
+        "h2": "49px",
+        "h3": "39px",
+        "h4": "28px",
+        "h5": "19px",
+        "h6": "16px",
+        "p1": "13px",
+        "p2": "11px",
+        "s1": "13px",
+        "s2": "49px",
+        "btn": "11",
+        "overline": "8px"
+);
+@each $font-type, $font-size in $font-scale {
+  .ge-text-#{$font-type} {
+    font-family: $font-name, sans-serif;
+    letter-spacing: .4px;
+    font-size: #{$font-size};
+  }
+}
+
+/* text weight */
+$font-weight:(
+  "extra-light" : "200",
+        "light" :"300",
+        "regular":"400",
+        "medium": "500",
+        "semi-bold": "600",
+        "bold" : "700",
+        "extra-bold": "800",
+        "black" : "900"
+);
+
+@each $name , $value in $font-weight {
+  .ge-#{$name} {
+    font-weight: #{$value};
+  }
+}

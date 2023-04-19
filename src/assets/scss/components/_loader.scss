@@ -1,0 +1,34 @@
+.loader {
+  @include ge-full-views;
+  @include ge-center-element;
+  flex-direction: column;
+  background: var(--ge-light-blue);
+
+  .loader-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fade-up .5s .2s forwards ;
+  }
+  .animated-icon{
+    opacity: 0;
+    animation: fade-up .5s .4s forwards ;
+    i{
+
+      font-size: 25px;
+      color: var(--ge-dark);
+    }
+  }
+
+}
+@keyframes fade-up {
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

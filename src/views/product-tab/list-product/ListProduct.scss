@@ -1,0 +1,41 @@
+.row-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 1px solid #d5c9c9;
+
+    .list-detail {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .quantite {
+        flex: 1;
+    }
+
+    .categorie {
+        flex: 1;
+    }
+
+    .prix {
+        flex: 1;
+    }
+    .list-action {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+
+        .btn-li {
+            border: none;
+            outline: none;
+            padding: 10px;
+            
+        }
+    }
+
+}

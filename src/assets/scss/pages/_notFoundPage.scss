@@ -1,0 +1,7 @@
+.not-found-page{
+  @include ge-full-views;
+  @include ge-center-element;
+  flex-direction: column;
+  position: relative;
+  background: var(--ge-light-blue);
+}

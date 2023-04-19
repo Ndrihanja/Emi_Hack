@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+:root{
+  --ge-blue : #ff2c2c;
+  --ge-light-blue:#ff9797;
+  --ge-dark: #01003a;
+  --ge-white:#ffffffff;
+  --ge-red:#ffe000;
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}

@@ -1,0 +1,30 @@
+.ge-btn{
+  padding: 12px 28px;
+  font-family: 'Poppins', sans-serif;
+  border: 0;
+  outline: 0;
+  letter-spacing: .4px;
+  font-size: 12px;
+  border-radius: 50px;
+  opacity: .8;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  &:hover{
+    opacity: 1;
+  }
+  &.btn-hight{
+    background: var(--ge-blue);
+    color: var(--ge-white);
+  }
+  &.btn-medium{
+    border: 2px solid var(--ge-dark);
+    background: transparent;
+    color: var(--ge-dark);
+    &:hover{
+      background: var(--ge-dark);
+      color: var(--ge-white);
+    }
+  }
+
+}

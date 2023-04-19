@@ -1,0 +1,40 @@
+.chart-dash {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-height: 700px;
+
+}
+
+.chiffre-affaire{
+    font-size: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    box-shadow: 7px 5px 16px 3px rgba(1, 0, 58, 0.20);
+    padding: 1rem;
+    
+}
+
+.nb-vente-mois {
+    font-size: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    box-shadow: 7px 5px 16px 3px rgba(1, 0, 58, 0.20);
+    padding: 1rem;
+
+}
+
+.circle-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 1rem;
+}
